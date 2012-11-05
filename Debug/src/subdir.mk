@@ -4,16 +4,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/gameoflife-openmp-stitch.cpp \
-../src/readfile.cpp 
+../src/gameoflife-openmp-stitch.cpp 
 
 OBJS += \
-./src/gameoflife-openmp-stitch.o \
-./src/readfile.o 
+./src/gameoflife-openmp-stitch.o 
 
 CPP_DEPS += \
-./src/gameoflife-openmp-stitch.d \
-./src/readfile.d 
+./src/gameoflife-openmp-stitch.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
