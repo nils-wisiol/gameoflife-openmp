@@ -88,8 +88,8 @@ void initFromFile(TYPE** world, char* path) {
     if (input[i] == 'o' || input[i] == 'b' || input[i] == '$') {
       token = input.substr(beginToken, i - beginToken + 1);
       tokens.push_back(token);
-      cout << "found token at " << i << ": " << input[i] << " (1) " << token
-          << endl;
+      //cout << "found token at " << i << ": " << input[i] << " (1) " << token
+      //    << endl;
       beginToken = i + 1;
     } else if (input[i] == '\n') {
       beginToken = i + 1;
@@ -98,7 +98,7 @@ void initFromFile(TYPE** world, char* path) {
   string lastToken = input.substr(beginToken, input.length() - beginToken + 1);
   if (lastToken != "")
     tokens.push_back(lastToken);
-  cout << "last token: " << lastToken << endl;
+  //cout << "last token: " << lastToken << endl;
 
   // process the tokens
   vector<string>::iterator t;
